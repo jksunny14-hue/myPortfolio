@@ -1,0 +1,974 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #1f2937;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #e5e7eb;
+
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(37, 99, 235, 0.15),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eff6ff 100%
+        );
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 80px 0;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #2563eb;
+
+    font-weight: 600;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+
+    line-height: 1.05;
+
+    color: #0f172a;
+
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+
+    color: #475569;
+
+    font-weight: 500;
+
+    margin-bottom: 22px;
+}
+
+.hero-text {
+    max-width: 720px;
+
+    font-size: 1.05rem;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.hero-image {
+    flex: 0 0 390px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.image-circle {
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 3/4;
+
+    padding: 10px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 8px solid #dbeafe;
+
+    box-shadow:
+        0 25px 60px rgba(37, 99, 235, 0.15);
+
+    overflow: hidden;
+}
+.profile-name {
+    text-align: center;
+    margin-top: 15px;
+    color:black;
+    font-size: 22px;
+}
+.image-circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 34px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    border: 2px solid #2563eb;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    color: white;
+
+    background: #2563eb;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-outline {
+    color: #2563eb;
+
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+    padding: 95px 0;
+}
+
+.alt-bg {
+    background: #f8fafc;
+}
+
+.section-heading {
+    margin-bottom: 46px;
+}
+
+.section-heading p {
+    color: #2563eb;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
+}
+
+.section-heading h2 {
+    font-size: 2.3rem;
+
+    color: #0f172a;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 28px;
+}
+
+.card,
+.skill-card,
+.project-card,
+.experience-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.card {
+    padding: 32px;
+}
+
+.card h3,
+.skill-card h3,
+.project-card h3,
+.experience-card h3 {
+    color: #0f172a;
+
+    margin-bottom: 16px;
+}
+
+.card p + p {
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.timeline-item span {
+    display: inline-block;
+
+    color: #2563eb;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.timeline-item h4 {
+    font-size: 1.1rem;
+
+    margin-bottom: 8px;
+}
+
+.timeline-item strong {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    font-size: 0.9rem;
+
+    color: #15803d;
+
+    background: #dcfce7;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-wrapper {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.skill-card {
+    padding: 28px;
+}
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.tags span {
+    background: #eff6ff;
+
+    color: #1d4ed8;
+
+    border: 1px solid #bfdbfe;
+
+    padding: 8px 12px;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.experience-card {
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+.experience-date {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+.experience-card h4 {
+    color: #64748b;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   PROJECT
+========================================= */
+
+.project-card {
+    padding: 38px;
+
+    max-width: 900px;
+}
+
+.project-label {
+    display: inline-block;
+
+    color: #1d4ed8;
+
+    background: #dbeafe;
+
+    border-radius: 999px;
+
+    padding: 6px 12px;
+
+    margin-bottom: 18px;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+}
+
+.project-card ul {
+    list-style: disc;
+
+    margin: 22px 0 0 22px;
+}
+
+.project-card li + li {
+    margin-top: 10px;
+}
+/* ================ POWERPOINT SECTION ================ */
+
+.powerpoint-section {
+    padding: 80px 20px;
+    background: #0b1120;
+    text-align: center;
+}
+
+.powerpoint-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.powerpoint-section h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.powerpoint-description {
+    color: #b8c1d1;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+/* PowerPoint Card */
+
+.powerpoint-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    background: #111827;
+    border: 1px solid #263449;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ppt-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.powerpoint-card h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.powerpoint-card p {
+    color: #aeb8c8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+
+.ppt-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ppt-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* View button */
+
+.view-btn {
+    color: #00bfff;
+    border: 2px solid #00bfff;
+    background: transparent;
+}
+
+.view-btn:hover {
+    background: #00bfff;
+    color: white;
+}
+
+/* Download button */
+
+.download-btn {
+    color: white;
+    background: #00bfff;
+    border: 2px solid #00bfff;
+}
+
+.download-btn:hover {
+    background: #008fcc;
+    border-color: #008fcc;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    background: #0f172a;
+
+    color: white;
+}
+
+.section-heading.light h2 {
+    color: white;
+}
+
+.section-heading.light p {
+    color: #93c5fd;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.contact-card {
+    display: block;
+
+    padding: 24px;
+
+    border: 1px solid #334155;
+
+    border-radius: 15px;
+
+    background: #1e293b;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+a.contact-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #60a5fa;
+
+    background: #24344d;
+}
+
+.contact-card span {
+    display: block;
+
+    color: #94a3b8;
+
+    margin-bottom: 6px;
+
+    font-size: 0.9rem;
+}
+
+.contact-card strong {
+    display: block;
+
+    word-break: break-word;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #020617;
+
+    color: #94a3b8;
+
+    text-align: center;
+
+    padding: 22px 0;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .nav {
+        flex-direction: column;
+
+        padding: 16px 0;
+
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 14px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding: 70px 0;
+    }
+
+    .hero-text {
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        flex: none;
+    }
+
+
+    .about-grid,
+    .skills-wrapper,
+    .contact-grid,
+    .experience-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .experience-card {
+        gap: 10px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+
+        font-size: 0.85rem;
+    }
+
+
+    .hero-container {
+        padding: 60px 0;
+    }
+
+    .image-circle {
+        width: 250px;
+
+        height: 250px;
+
+        border-width: 6px;
+    }
+
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+
+    .section {
+        padding: 70px 0;
+    }
+
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+
+    .card,
+    .skill-card,
+    .project-card,
+    .experience-card {
+        padding: 24px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+
+        max-width: 250px;
+
+        text-align: center;
+    }
+
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ================= POWERPOINT ================= */
+
+.powerpoint-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.powerpoint-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.powerpoint-section h2 {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.powerpoint-description {
+    color: #64748b;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.powerpoint-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ppt-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.powerpoint-card h3 {
+    font-size: 25px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.powerpoint-card p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.ppt-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ppt-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.view-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.view-btn:hover {
+    background: #1d4ed8;
+}
+
+.download-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.download-btn:hover {
+    background: #15803d;
+}
+.ppt-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.powerpoint-card {
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ppt-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.powerpoint-card h3 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.powerpoint-card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.ppt-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.ppt-btn:hover {
+    background: #1d4ed8;
+}
+.contact-card i {
+    font-size: 28px;
+    color: #E1306C;
+    margin-right: 15px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+}
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-card i {
+    font-size: 25px;
+    color: #E1306C;
+}
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.instagram-title {
+    display: flex;
+    align-items: center;
+}
+
+.contact-card i {
+    font-size: 25px;
+    color: white;
+}

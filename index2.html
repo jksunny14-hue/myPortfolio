@@ -1,0 +1,1036 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="John Kurian Sunny - B.Com Finance & Taxation Graduate Portfolio">
+
+<title>John Kurian Sunny | Finance & Taxation Graduate</title>
+
+<!-- Google Fonts --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/* ===================================================== GLOBAL ===================================================== */
+
+:root { --navy: #07111f; --navy-light: #0d1b2e; --blue: #163451; --gold: #d4a84f; --gold-light: #f0c96b;
+
+--white: #ffffff; --text: #172033; --muted: #667085; --light: #f6f8fb; --border: #e6eaf0;
+
+--shadow: 0 20px 60px rgba(7, 17, 31, 0.10);
+
+--radius: 18px; --container: 1160px; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+html { scroll-padding-top: 90px; }
+
+body { font-family: "Inter", sans-serif; background: var(--white); color: var(--text); line-height: 1.7; overflow-x: hidden; }
+
+h1, h2, h3, h4 { font-family: "Manrope", sans-serif; }
+
+a { text-decoration: none; color: inherit; }
+
+ul { list-style: none; }
+
+.container { width: min(92%, var(--container)); margin: auto; }
+
+/* ===================================================== HEADER ===================================================== */
+
+.header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+
+background: rgba(7, 17, 31, 0.92); backdrop-filter: blur(15px);
+
+border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+.nav { height: 78px;
+
+display: flex; align-items: center; justify-content: space-between; }
+
+.logo { font-family: "Manrope", sans-serif; font-size: 22px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
+
+.logo span { color: var(--gold); }
+
+.nav-links { display: flex; align-items: center; gap: 30px; }
+
+.nav-links a { position: relative;
+
+color: #d8dee8; font-size: 14px; font-weight: 500;
+
+transition: 0.3s ease; }
+
+.nav-links a::after { content: ""; position: absolute;
+
+left: 0; bottom: -8px;
+
+width: 0; height: 2px;
+
+background: var(--gold);
+
+transition: 0.3s ease; }
+
+.nav-links a:hover { color: var(--gold-light); }
+
+.nav-links a:hover::after { width: 100%; }
+
+/* ===================================================== HERO ===================================================== */
+
+.hero { min-height: 100vh;
+
+display: flex; align-items: center;
+
+padding: 130px 0 80px;
+
+color: var(--white);
+
+background: radial-gradient( circle at 85% 20%, rgba(212,168,79,0.13), transparent 28% ), radial-gradient( circle at 10% 80%, rgba(32,89,140,0.20), transparent 30% ), var(--navy); }
+
+.hero-container { display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 80px; }
+
+.eyebrow { display: inline-flex; align-items: center; gap: 10px;
+
+color: var(--gold-light); font-size: 14px; font-weight: 700;
+
+text-transform: uppercase; letter-spacing: 2px;
+
+margin-bottom: 18px; }
+
+.eyebrow::before { content: ""; width: 35px; height: 2px; background: var(--gold); }
+
+.hero h1 { font-size: clamp(42px, 6vw, 76px); line-height: 1.05; letter-spacing: -2.5px;
+
+margin-bottom: 18px; }
+
+.hero h2 { font-size: clamp(20px, 3vw, 30px); font-weight: 600;
+
+color: #d8dee8;
+
+margin-bottom: 22px; }
+
+.hero-text { max-width: 650px;
+
+color: #aeb8c7; font-size: 14px;
+
+margin-bottom: 35px; }
+
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+
+min-height: 50px; padding: 0 23px;
+
+border-radius: 8px;
+
+font-size: 14px; font-weight: 700;
+
+transition: 0.3s ease; }
+
+.btn-primary { background: var(--gold); color: var(--navy); }
+
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-3px); }
+
+.btn-outline { color: var(--white); border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.03); }
+
+.btn-outline:hover { border-color: var(--gold); color: var(--gold-light); transform: translateY(-3px); }
+
+/* ===================================================== HERO IMAGE ===================================================== */
+
+.hero-image { display: flex; justify-content: center; }
+
+.image-wrapper { position: relative; width: 280px; height: 350px; }
+
+.image-wrapper::before { content: "";
+
+position: absolute; inset: 15px -15px -15px 15px;
+
+
+opacity: 0.6; }
+
+.image-card { position: relative;
+
+width: 100%; height: 100%;
+
+overflow: hidden;
+
+border-radius: 24px;
+
+background: #101f33;
+
+border: 1px solid rgba(255,255,255,0.12);
+
+box-shadow: 0 30px 80px rgba(0,0,0,0.35); }
+
+.image-card img { width: 100%; height: 100%;
+
+object-fit: cover;
+
+display: block; }
+
+.profile-label { position: absolute;
+
+left: 20px; right: 20px; bottom: 20px;
+
+padding: 15px 18px;
+
+border-radius: 12px;
+
+background: rgba(7,17,31,0.88); backdrop-filter: blur(12px);
+
+border: 1px solid rgba(255,255,255,0.10); }
+
+.profile-label strong { display: block; color: white; font-family: "Manrope", sans-serif; font-size: 17px; }
+
+.profile-label span { color: var(--gold-light); font-size: 12px; }
+
+/* ===================================================== SECTION ===================================================== */
+
+.section { padding: 100px 0; }
+
+.section.alt { background: var(--light); }
+
+.section-heading { max-width: 650px; margin-bottom: 55px; }
+
+.section-heading p { color: var(--gold); font-size: 13px; font-weight: 800;
+
+text-transform: uppercase; letter-spacing: 2px;
+
+margin-bottom: 10px; }
+
+.section-heading h2 { font-size: clamp(32px, 4vw, 46px); line-height: 1.15;
+
+color: var(--navy); letter-spacing: -1.5px; }
+
+.section-heading h2::after { content: ""; display: block;
+
+width: 50px; height: 3px;
+
+background: var(--gold);
+
+margin-top: 18px; }
+
+/* ===================================================== ABOUT ===================================================== */
+
+.about-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 30px; }
+
+.card { padding: 35px;
+
+background: white;
+
+border: 1px solid var(--border); border-radius: var(--radius);
+
+box-shadow: var(--shadow);
+
+transition: 0.3s ease; }
+
+.card:hover { transform: translateY(-5px); }
+
+.card h3 { font-size: 22px; margin-bottom: 20px; color: var(--navy); }
+
+.card p { color: var(--muted); font-size: 15px; margin-bottom: 15px; }
+
+.education-item { padding-left: 20px; border-left: 3px solid var(--gold); }
+
+.education-item .date { display: inline-block;
+
+padding: 6px 11px;
+
+border-radius: 20px;
+
+background: #fff7e6; color: #9b6c13;
+
+font-size: 12px; font-weight: 700;
+
+margin-bottom: 14px; }
+
+.education-item h4 { color: var(--navy); font-size: 18px; margin-bottom: 8px; }
+
+.education-item p { margin-bottom: 8px; }
+
+.graduated { color: #16855b; font-size: 13px; font-weight: 700; }
+
+/* ===================================================== SKILLS ===================================================== */
+
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+
+.skill-card { padding: 32px;
+
+background: white;
+
+border: 1px solid var(--border); border-radius: var(--radius);
+
+transition: 0.3s ease; }
+
+.skill-card:hover { border-color: rgba(212,168,79,0.5); transform: translateY(-5px); box-shadow: var(--shadow); }
+
+.skill-icon { width: 52px; height: 52px;
+
+display: flex; align-items: center; justify-content: center;
+
+border-radius: 12px;
+
+background: #fff7e6; color: var(--gold);
+
+font-size: 21px;
+
+margin-bottom: 22px; }
+
+.skill-card h3 { color: var(--navy); font-size: 20px; margin-bottom: 20px; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 9px; }
+
+.tags span { padding: 8px 12px;
+
+background: #f4f6f9;
+
+border: 1px solid #e9edf2; border-radius: 10px;
+
+color: #4c586a;
+
+font-size: 12px; font-weight: 600; }
+
+/* ===================================================== EXPERIENCE ===================================================== */
+
+.experience-card { display: grid; grid-template-columns: 180px 1fr; gap: 35px;
+
+padding: 38px;
+
+background: white;
+
+border: 1px solid var(--border); border-radius: var(--radius);
+
+box-shadow: var(--shadow); }
+
+.experience-date { color: var(--gold); font-weight: 800; font-size: 14px; }
+
+.experience-card h3 { color: var(--navy); font-size: 25px; margin-bottom: 5px; }
+
+.experience-card h4 { color: #536174; font-size: 15px; margin-bottom: 15px; }
+
+.experience-card p { color: var(--muted); font-size: 15px; }
+
+/* ===================================================== PROJECT ===================================================== */
+
+.project-main { padding: 40px;
+
+background: var(--navy); color:white;
+
+border-radius: var(--radius);
+
+box-shadow: 0 25px 70px rgba(7,17,31,0.20);
+
+margin-bottom: 30px; }
+
+.project-label { display: inline-block;
+
+padding: 7px 12px;
+
+border-radius: 20px;
+
+background: rgba(212,168,79,0.12); color: var(--gold-light);
+
+font-size: 11px; font-weight: 800;
+
+text-transform: uppercase; letter-spacing: 1px;
+
+margin-bottom: 18px; }
+
+.project-main h3 { max-width: 850px;
+
+font-size: clamp(24px, 3vw, 34px); line-height: 1.3;
+
+margin-bottom: 25px; }
+
+.project-list { display: grid; gap: 14px; }
+
+.project-list li { position: relative; padding-left: 28px;
+
+color: white; font-size: 14px; }
+
+.project-list li::before { content: "\f00c";
+
+position: absolute; left: 0; top: 2px;
+
+font-family: "Font Awesome 6 Free"; font-weight: 900;
+
+color: var(--gold); }
+
+/* ===================================================== PROJECT FILES ===================================================== */
+
+.file-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+
+.file-card { padding: 30px;
+
+background: var(--navy);
+
+border: 1px solid var(--border); border-radius: var(--radius);
+
+transition: 0.3s ease; }
+
+.file-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+
+.file-icon { width: 55px; height: 55px;
+
+display: flex; align-items: center; justify-content: center;
+
+border-radius: 12px;
+
+background: #eaf2ff; color: #2563eb;
+
+font-size: 23px;
+
+margin-bottom: 20px; }
+
+.file-card h3 { color:white; font-size: 19px; margin-bottom: 8px; }
+
+.file-card p { color: var(--muted); font-size: 14px; margin-bottom: 22px; }
+
+.file-btn { display: inline-flex; align-items: center; gap: 8px;
+
+padding: 11px 15px;
+
+background: var(--navy); color: white;
+
+border-radius: 7px;
+
+font-size: 12px; font-weight: 700;
+
+transition: 0.3s ease; }
+
+.file-btn:hover { background: var(--gold); color: var(--navy); }
+
+/* ===================================================== CONTACT ===================================================== */
+
+.contact-section { background: var(--navy); color: white; }
+
+.contact-section .section-heading h2 { color: white; }
+
+.contact-section .section-heading p { color: var(--gold-light); }
+
+.contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+.contact-card { display: flex; align-items: center; gap: 16px;
+
+padding: 22px;
+
+border: 1px solid rgba(255,255,255,0.10); border-radius: 13px;
+
+background: rgba(255,255,255,0.035);
+
+transition: 0.3s ease; }
+
+.contact-card:hover { transform: translateY(-4px);
+
+border-color: rgba(212,168,79,0.55);
+
+background: rgba(255,255,255,0.06); }
+
+.contact-card > i { width: 45px; height: 45px;
+
+flex-shrink: 0;
+
+display: flex; align-items: center; justify-content: center;
+
+border-radius: 10px;
+
+background: rgba(212,168,79,0.12); color: var(--gold-light);
+
+font-size: 18px; }
+
+.contact-card span { display: block;
+
+color: #8793a4;
+
+font-size: 11px; font-weight: 700;
+
+text-transform: uppercase; letter-spacing: 1px;
+
+margin-bottom: 3px; }
+
+.contact-card strong { display: block;
+
+color: white;
+
+font-size: 13px; font-weight: 600;
+
+word-break: break-word; }
+
+/* ===================================================== FOOTER ===================================================== */
+
+.footer { padding: 25px 0;
+
+background: #040b14;
+
+text-align: center;
+
+color: #778397;
+
+font-size: 12px; }
+
+/* ===================================================== RESPONSIVE ===================================================== */
+
+@media (max-width: 950px) {
+
+.nav-links { gap: 18px; }
+
+.hero-container { grid-template-columns: 1fr; text-align: center; }
+
+.hero-text { margin-left: auto; margin-right: auto; }
+
+.hero-buttons { justify-content: center; }
+
+.hero-image { order: -1; }
+
+.image-wrapper { width: 290px; height: 350px; }
+
+.about-grid { grid-template-columns: 1fr; }
+
+.skills-grid { grid-template-columns: 1fr 1fr; }
+
+.contact-grid { grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 700px) {
+
+.header { position: relative; }
+
+.nav { height: auto; min-height: 75px;
+
+flex-direction: column; justify-content: center;
+
+gap: 12px;
+
+padding: 15px 0; }
+
+.nav-links { width: 100%;
+
+justify-content: center; flex-wrap: wrap;
+
+gap: 10px 16px; }
+
+.nav-links a { font-size: 12px; }
+
+.hero { padding-top: 70px; }
+
+.section { padding: 70px 0; }
+
+.skills-grid, .file-grid, .contact-grid { grid-template-columns: 1fr; }
+
+.experience-card { grid-template-columns: 1fr; gap: 12px; }
+
+.card, .project-main, .file-card, .skill-card, .experience-card { padding: 25px; }
+
+.hero h1 { font-size: 43px; letter-spacing: -1.5px; } }
+
+@media (max-width: 430px) {
+
+.nav-links { gap: 8px 12px; }
+
+.nav-links a { font-size: 11px; }
+
+.image-wrapper { width: 250px; height: 310px; }
+
+.hero h1 { font-size: 36px; }
+
+.hero-buttons { flex-direction: column; }
+
+.btn { width: 100%; } }
+
+</style> </head>
+
+<body>
+
+<!-- ========================================================= HEADER ========================================================= -->
+
+<header class="header">
+
+<div class="container nav">
+
+<a href="#home" class="logo"> </a>
+
+<nav>
+
+<ul class="nav-links">
+
+<li> <a href="#home">Home</a> </li>
+
+<li> <a href="#about">About</a> </li>
+
+<li> <a href="#skills">Skills</a> </li>
+
+<li> <a href="#experience">Experience</a> </li>
+
+<li> <a href="#project">Project</a> </li>
+
+<li> <a href="#contact">Contact</a> </li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<!-- ========================================================= HERO ========================================================= -->
+
+<section id="home" class="hero">
+
+<div class="container hero-container">
+
+<div class="hero-content">
+
+<p class="eyebrow"> Welcome to my portfolio </p>
+
+<h1> John Kurian Sunny </h1>
+
+<h2> Data Analyst</h2>
+
+<p class="hero-text">Detail-oriented and analytical Data Analyst with a strong understanding of data collection, cleaning, analysis, and visualization. Skilled in SQL, Microsoft Excel, Power BI, and Python to transform raw data into meaningful insights and support data-driven decision-making. Experienced in identifying trends, preparing reports and dashboards, and presenting complex information in a clear and understandable manner. 
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-outline"> <i class="fa-solid fa-paper-plane"></i> Contact Me </a>
+
+<a href="#project" class="btn btn-outline"> <i class="fa-solid fa-folder-open"></i> View Projects </a>
+
+<a href="john resume.pdf" class="btn btn-outline" target="_blank">
+
+<i class="fa-solid fa-file-pdf"></i> View Resume
+
+</a>
+
+</div>
+
+</div>
+
+<!-- PROFILE IMAGE -->
+
+<div class="hero-image">
+
+<div class="image-wrapper">
+
+<div class="image-card">
+
+<img src="profile (2).jpeg" alt="John Kurian Sunny" >
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================================= ABOUT ========================================================= -->
+
+<section id="about" class="section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<p> Get to know me </p>
+
+<h2> About Me </h2>
+
+</div>
+
+<div class="about-grid">
+
+<div class="card">
+
+<h3> Profile </h3>
+
+<p> I am a motivated and responsible Bachelor of Commerce (Finance and Taxation) graduate with a strong interest in finance, business operations and professional development. </p>
+
+<p> I have communication, teamwork, problem-solving and customer service skills and enjoy working in dynamic environments. </p>
+
+<p> My academic project strengthened my research, analytical and presentation abilities. I am eager to build my career in an organization where I can apply my knowledge, develop my skills and contribute to organizational success. </p>
+
+</div>
+
+<div class="card">
+
+<h3> Education </h3>
+
+<div class="education-item">
+
+<span class="date"> 2023 — 2026 </span>
+
+<h4> Bachelor of Commerce <br> Finance & Taxation </h4>
+
+<p> St. Kuriakose College of Management and Science, Kuruppampady </p>
+
+<span class="graduated"> <i class="fa-solid fa-circle-check"></i> Graduated </span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================================= SKILLS ========================================================= -->
+
+<section id="skills" class="section alt">
+
+<div class="container">
+
+<div class="section-heading">
+
+<p> What I can do </p>
+
+<h2> Skills & Expertise </h2>
+
+</div>
+
+<div class="skills-grid">
+
+<!-- TECHNICAL -->
+
+<div class="skill-card">
+
+<div class="skill-icon"> <i class="fa-solid fa-chart-column"></i> </div>
+
+<h3> Technical Skills </h3>
+
+<div class="tags">
+
+<span>Microsoft Excel</span>
+
+<span>Advanced Excel</span>
+
+<span>Power BI</span>
+
+<span>Microsoft Word</span>
+
+<span>PowerPoint</span>
+
+<span>Data Analysis</span>
+
+<span>Data Visualization</span>
+
+<span>Html</span>
+
+<span>CSS</span>
+
+</div>
+
+</div>
+
+<!-- PROFESSIONAL -->
+
+<div class="skill-card">
+
+<div class="skill-icon"> <i class="fa-solid fa-people-group"></i> </div>
+
+<h3> Professional Skills </h3>
+
+<div class="tags">
+
+<span>Problem Solving</span>
+
+<span>Team Management</span>
+
+<span>Crisis Management</span>
+
+<span>Planning</span>
+
+<span>Scheduling</span>
+
+<span>Customer Service</span>
+
+</div>
+
+</div>
+
+<!-- LANGUAGES -->
+
+<div class="skill-card">
+
+<div class="skill-icon"> <i class="fa-solid fa-language"></i> </div>
+
+<h3> Languages </h3>
+
+<div class="tags">
+
+<span>Malayalam</span>
+
+<span>English</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================================= EXPERIENCE ========================================================= -->
+
+<section id="experience" class="section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<p> My professional background </p>
+
+<h2> Work Experience </h2>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-date">
+
+<i class="fa-regular fa-calendar"></i>
+
+2023 · 6 Months
+
+</div>
+
+<div>
+
+<h3> Billing Staff </h3>
+
+<h4> Moolans Famili Mart, Perumbavoor </h4>
+
+<p> Worked in a customer-facing billing role, supporting daily store operations, customer service and transaction handling. </p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================================= PROJECT ========================================================= -->
+
+<section id="project" class="section alt">
+
+<div class="container">
+
+<div class="section-heading">
+
+<p> Academic work </p>
+
+<h2> Featured Project </h2>
+
+</div>
+
+<div class="project-main">
+
+<span class="project-label"> Academic Project </span>
+
+<h3> Role of Social Media in Enhancing Brand Awareness of Cetaphil Products in Kuruppampady Locality </h3>
+
+<ul class="project-list">
+
+<li> To find out the level of awareness of Cetaphil among people in Kuruppampady. </li>
+
+<li> To identify the most effective media platform for Cetaphil products. </li>
+
+<li> To study how social media influences the promotion of Cetaphil products. </li>
+
+</ul>
+
+</div>
+
+<!-- PROJECT FILES -->
+
+<div class="file-grid">
+
+<div class="file-card">
+
+<div class="file-icon">
+
+<i class="fa-solid fa-file-excel"></i>
+
+</div>
+
+<h3> Excel Work </h3>
+
+<p> Project-related Excel work and analysis presentation. </p>
+
+<a href="my-project.pptx.pptx" class="file-btn" download >
+
+<i class="fa-solid fa-download"></i>
+
+Download / view File
+</a>
+
+</div>
+
+<div class="file-card">
+
+<div class="file-icon">
+
+<i class="fa-solid fa-chart-pie"></i>
+
+</div>
+
+<h3> Power BI Work </h3>
+
+<p> Project-related Power BI work and presentation. </p>
+
+<a href="my-project.pptx" class="file-btn" download >
+
+<i class="fa-solid fa-download"></i>
+
+Download / view File
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================================= CONTACT ========================================================= -->
+
+<section id="contact" class="section contact-section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<p> Let's connect </p>
+
+<h2> Contact Me </h2>
+
+</div>
+
+<div class="contact-grid">
+
+<!-- EMAIL -->
+
+<a class="contact-card" href="mailto:jksunny14@gmail.com" >
+
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+<span>Email</span>
+
+<strong> jksunny14@gmail.com </strong>
+
+</div>
+
+</a>
+
+<!-- LINKEDIN -->
+
+<a class="contact-card" href="https://www.linkedin.com/in/john-kurian-sunny-99677a384/" target="_blank" rel="noopener noreferrer" >
+
+<i class="fa-brands fa-linkedin"></i>
+
+<div>
+
+<span>LinkedIn</span>
+
+<strong> John Kurian Sunny </strong>
+
+</div>
+
+</a>
+
+<!-- INSTAGRAM -->
+
+<a class="contact-card" href="https://www.instagram.com/johnkuriansunny/" target="blank" rel="noopener noreferrer" >
+
+<i class="fa-brands fa-instagram"></i>
+
+<div>
+
+<span>Instagram</span>
+
+<strong> @john_kuriansunny </strong>
+
+</div>
+
+</a>
+
+<!-- PHONE -->
+
+<a class="contact-card" href="tel:+918301057427" >
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<span>Phone</span>
+
+<strong> +91 83010 57427 </strong>
+
+</div>
+
+</a>
+
+<!-- WHATSAPP -->
+
+<a class="contact-card" href="https://wa.me/918301057427" target="_blank" rel="noopener noreferrer" >
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<div>
+
+<span>WhatsApp</span>
+
+<strong> +91 83010 57427 </strong>
+
+</div>
+
+</a>
+
+<!-- LOCATION -->
+
+<div class="contact-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<div>
+
+<span>Location</span>
+
+<strong> Perumbavoor, Kerala </strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- ========================================================= FOOTER ========================================================= -->
+
+<footer class="footer">
+
+<div class="container">
+
+<p> © 2026 John Kurian Sunny. All rights reserved. </p>
+
+</div>
+
+</footer>
+
+</body> </html> :::
